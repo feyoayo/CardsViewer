@@ -1,0 +1,18 @@
+.Card {
+    margin: 0;
+    display: flex;
+}
+
+.Card ul{
+    width: 100%;
+}
+
+.Card ul li {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 200px;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}

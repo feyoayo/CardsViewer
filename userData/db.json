@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "_id": "5e432b58faf99afb6f468ebf",
+      "index": 0,
+      "guid": "d33555f3-3f2c-44cf-bff5-7924a567b88b",
+      "isActive": true,
+      "balance": "$3,126.17",
+      "picture": "http://placehold.it/32x32",
+      "age": 24,
+      "eyeColor": "brown",
+      "name": "Robinson Lloyd",
+      "gender": "male",
+      "company": "TROLLERY",
+      "email": "robinsonlloyd@trollery.com",
+      "phone": "+1 (999) 427-3302",
+      "address": "796 Prospect Avenue, Thomasville, Kansas, 4553",
+      "about": "Amet proident consectetur ipsum eu eu. Exercitation tempor ea esse pariatur eu officia nostrud dolore exercitation esse incididunt consequat. Voluptate irure occaecat mollit pariatur voluptate sint cillum esse magna consequat consequat et est est. Est incididunt duis aliqua aute reprehenderit qui enim consectetur velit in fugiat. Dolore laborum culpa labore minim tempor. Deserunt pariatur amet aliqua proident minim laborum pariatur culpa veniam eu laborum consectetur elit.\r\n",
+      "registered": "2018-05-30T12:29:44 -03:00",
+      "latitude": 47.531087,
+      "longitude": -39.721881,
+      "tags": [
+        "eiusmod",
+        "ex",
+        "veniam",
+        "quis",
+        "sint",
+        "voluptate",
+        "sunt"
+      ],
+      "friends": [{
+        "id": 0,
+        "name": "Eugenia Barton"
+      },
+        {
+          "id": 1,
+          "name": "Elnora Coffey"
+        },
+        {
+          "id": 2,
+          "name": "Janice Munoz"
+        }
+      ],
+      "greeting": "Hello, Robinson Lloyd! You have 9 unread messages.",
+      "favoriteFruit": "apple"
+    }
+  ]
+
+}
