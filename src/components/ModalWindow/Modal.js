@@ -7,7 +7,6 @@ const ModalTutorLink = ['https://www.digitalocean.com/community/tutorials/react-
 const ModalWindow = props => {
     const showModal = props.show ? 'display-block': 'display-none';
     const cls = ['Modal', showModal]
-    console.log(props.manInfo)
     return(
         <div className={cls.join(' ')}>
             <div>
@@ -17,7 +16,7 @@ const ModalWindow = props => {
                 <p>kek</p>
                 <p>wait</p>
                 <p>lol</p>
-                <button>Close</button>
+                <button onClick={props.close}>Close</button>
             </div>
 
         </div>

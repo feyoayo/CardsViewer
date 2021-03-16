@@ -4,10 +4,26 @@ import ModalWindow from "../ModalWindow/Modal";
 
 const Card = ({data}) => {
     const [modalStatus, setModalStatus] = React.useState(false)
+
+    React.useEffect(()=>{
+        return () => {
+
+        }
+    })
+    const closeModal = () => {
+        setModalStatus(false)
+    }
+
+
+
     const info = data.map((item, index) => {
+        const modalWindow = () => {
+            setModalStatus(!modalStatus)
+            console.log(item._id)
+        }
         return (
             <>
-                <li key={index}>
+                <li key={item._id}>
                     <img src={item.picture} alt=""/>
                     <p>
                         Name: {item.name}
@@ -22,31 +38,25 @@ const Card = ({data}) => {
                         Balance: {item.balance}
                     </p>
                     <hr/>
-
+                    <button onClick={modalWindow}>Show More</button>
+                    <ModalWindow item={item} close={closeModal} show={modalStatus}/>
                 </li>
-
             </>
+
+
 
         )
     })
 
-    const modalWindow = () => {
-        setModalStatus(!modalStatus);
 
-    }
 
     return (
-        <>
-            <div className='Card' onClick={modalWindow}>
+            <div className='Card'>
                 <ul>
                     {info}
-
                 </ul>
+
             </div>
-            <ModalWindow show={modalStatus}/>
-        </>
-
-
     )
 }
 
